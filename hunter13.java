@@ -24,11 +24,11 @@ public class hunter13 {
 		StringBuffer sb=new StringBuffer(s);
 		if(s.equals(new String(sb.reverse())))
 		{
-			System.out.println("PALINDROME");
+			System.out.println("THE LinkedList IS PALINDROME");
 		}
 		else
 		{
-			System.out.println("NOT A PALINDROME");
+			System.out.println("THE LinkedList IS NOT A PALINDROME");
 		}
 		
 
