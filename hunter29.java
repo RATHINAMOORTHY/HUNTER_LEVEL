@@ -20,9 +20,9 @@ public class hunter29 {
 			int sum=0;
 			for(int j=i;j<n;j++)
 			{
-				sum=sum+a[i];
-				al.add(sum);
+				sum=sum+a[j];
 			}
+			al.add(sum);
 		}
 		Collections.sort(al);
 		int s=(int)al.get(al.size()-1);
@@ -31,7 +31,8 @@ public class hunter29 {
 			int sum=0;
 			for(int j=i;j<n;j++)
 			{
-				sum=sum+a[i];
+				sum=sum+a[j];
+			}
 				if(sum==s)
 				{
 					for(int k=i;k<n;k++)
@@ -40,7 +41,6 @@ public class hunter29 {
 					}
 					System.out.print("= "+sum);
 				}
-			}
 		}
 
 	}
