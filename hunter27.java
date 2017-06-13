@@ -6,21 +6,32 @@ class hunter27
 		Scanner in=new Scanner(System.in);
 		System.out.println("ENTER THE STRING");
 		String s=in.nextLine();
-		ArrayList<Integer> al=new ArrayList<Integer>();
+		ArrayList<String> al=new ArrayList<String>();
 		for(int i=0;i<s.length();i++)
 		{
 			for(int j=i;j<s.length();j++)
 			{
 				String str=s.substring(i,j+1);
 			    StringBuffer sb=new StringBuffer(str);
-				if(!sb.equals(sb.reverse()))
+				if(!str.equals(new String(sb.reverse())))
 				{
-					al.add(str.length());
+					al.add(str);					
 				}
 			}
 		}
-		Collections.sort(al);
-		System.out.println(al.get(al.size()-1));
+		int pos=0;
+		String large="";
+        int len=1;
+        for(int i=0;i<al.size();i++)
+        {
+        	if(al.get(i).length()>len)
+        	{
+        		large=al.get(i);
+        		pos=i;
+        		len=al.get(i).length();
+        	}
+        }
+		System.out.println("LARGEST SUB STRING IS "+al.get(pos)+" OF LENGTH "+len);
 	}
 }
-					
+				
