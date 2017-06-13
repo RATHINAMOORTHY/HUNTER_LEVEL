@@ -13,7 +13,7 @@ class hunter27
 			{
 				String str=s.substring(i,j+1);
 			    StringBuffer sb=new StringBuffer(str);
-				if(sb.equals(sb.reverse()))
+				if(!sb.equals(sb.reverse()))
 				{
 					al.add(str.length());
 				}
