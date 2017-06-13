@@ -10,7 +10,7 @@ public class hunter62 {
 		System.out.println("ENTER THE SHARE LENGTH VALUE");
 		int n=in.nextInt();
 		int[] a=new int[n];
-		System.out.println("ENTER THE SHARE VALUES");
+		System.out.println("ENTER THE SHARE VALUES (THOUSANDS)");
 		for(int i=0;i<n;i++)
 		{
 			a[i]=in.nextInt();
@@ -42,7 +42,7 @@ public class hunter62 {
 					{
 						if(a[i]-a[j]==max)
 						{
-							System.out.println(a[i]+" - "+a[j]+" = "+max);
+							System.out.println(a[i]+" - "+a[j]+" = "+max+" THOUSANDS");
 							break;
 						}
 					}
