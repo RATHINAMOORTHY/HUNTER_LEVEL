@@ -16,13 +16,13 @@ public class hunter66 {
 			if(s.length()!=2)
 			{
 				String s1=String.valueOf(s.charAt(0))+String.valueOf(s.charAt(1));
-				if(s1.equals("10"))
+				if(s1.equals("10")||s1.equals("01"))
 				{
 					count++;
 				}
 			}
 		}
-		System.out.println("ENTER THE ELEMENTS with prefix 01 is "+count);
+		System.out.println("ENTER THE ELEMENTS with prefix 01 or 10 is "+count);
 
 	}
 
